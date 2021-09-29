@@ -22,11 +22,12 @@
   },
   "devDependencies": {
     "@adalo/cli": "^0.0.41",
+    "compact-base64": "^2.1.2",
+    "jam-react": "^0.1.2",
     "react": "^16.9.0",
     "react-art": "^16.6.0",
     "react-dom": "^16.9.0",
     "react-native-web": "^0.9.5",
-    "jam-react": "^0.1.2",
-    "compact-base64": "^2.1.2"
+    "react-native-webview": "^11.13.1"
   }
 }
