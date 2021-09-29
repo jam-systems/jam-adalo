@@ -1,0 +1,32 @@
+{
+  "name": "Jam",
+  "description": "Currently in beta! Only compatible on web. Native support coming soon.",
+  "version": "2.6.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "author": "Thomas Schranz",
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "adalo": {
+    "logo": "./logo.png",
+    "displayName": "Jam Room",
+    "components": [
+      {
+        "name": "JamComponent",
+        "manifest": "./src/components/JamComponent/manifest.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@adalo/cli": "^0.0.41",
+    "react": "^16.9.0",
+    "react-art": "^16.6.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.9.5",
+    "jam-react": "^0.1.2",
+    "compact-base64": "^2.1.2"
+  }
+}

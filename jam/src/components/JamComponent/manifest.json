@@ -1,0 +1,59 @@
+{
+  "displayName": "Jam Room",
+  "defaultWidth": 400,
+  "defaultHeight": 600,
+  "resizeX": true,
+  "resizeY": true,
+  "components": "./index.js",
+  "icon": "./thumbnail.png",
+  "props": [
+    {
+      "name": "roomId",
+      "displayName": "Room ID",
+      "type": "text",
+      "default": "",
+      "helpText": "An alphanumeric, random, unguessable ID, at least 4 characters in length, may also include minus character (-)"
+    },
+    {
+      "name": "stageOnly",
+      "displayName": "User joins on Stage",
+      "type": "boolean",
+      "default": true,
+      "helpText": "&nbsp;"
+    }
+  ],
+  "childComponents": [
+    {
+      "name": "identity",
+      "displayName": "Identity",
+      "props": [
+        {
+          "name": "displayName",
+          "displayName": "User Screen Name (Optional)",
+          "type": "text",
+          "default": "",
+          "helpText": "&nbsp;"
+        },
+        {
+          "name": "avatar",
+          "displayName": "User Avatar Image (Optional)",
+          "type": "image",
+          "default": "",
+          "helpText": "&nbsp;"
+        }
+      ]
+  },
+  {
+    "name": "advanced",
+    "displayName": "Advanced",
+    "props": [
+      {
+        "name": "jamHost",
+        "displayName": "Jam Hostname (Optional)",
+        "type": "text",
+        "default": "",
+        "helpText": "The hostname of the Jam server to use (default if left blank: jam.systems)"
+      }
+    ]
+  }]
+}
