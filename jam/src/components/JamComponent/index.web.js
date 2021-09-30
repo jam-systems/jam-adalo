@@ -5,8 +5,6 @@ import editorImage from "./editorImage";
 
 class JamComponent extends Component {
   render() {
-    console.log("editor");
-    console.log(this.props.editor);
     console.log(this.props);
 
     if (this.props.editor) {
@@ -29,6 +27,7 @@ class JamComponent extends Component {
           name: this.props.identity?.displayName,
           avatar: this.props.identity?.avatar?.uri,
         },
+        debug: true,
       })
     );
     let uri = `https://${this.props.advanced?.jamHost || "jam.systems"}/${

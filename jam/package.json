@@ -1,5 +1,5 @@
 {
-  "name": "Jam",
+  "name": "jam-adalo",
   "description": "Currently in beta! Only compatible on web. Native support coming soon.",
   "version": "2.6.0",
   "main": "index.js",
@@ -28,6 +28,7 @@
     "react-art": "^16.6.0",
     "react-dom": "^16.9.0",
     "react-native-web": "^0.9.5",
-    "react-native-webview": "^11.13.1"
-  }
+    "react-native-webview": "^7.2.7"
+  },
+  "dependencies": {}
 }
