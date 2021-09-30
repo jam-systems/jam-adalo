@@ -24,8 +24,8 @@ class JamComponent extends Component {
           autoCreate: "true",
         },
         identity: {
-          name: this.props.identity?.displayName,
-          avatar: this.props.identity?.avatar?.uri,
+          name: this.props.identity?.displayName || undefined,
+          avatar: this.props.identity?.avatar?.uri || undefined,
         },
         debug: true,
       })

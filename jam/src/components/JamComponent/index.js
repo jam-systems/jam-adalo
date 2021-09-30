@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {} from "react-native";
+import { Platform } from "react-native";
 import { WebView } from "react-native-webview";
 import { toBase64, toUrl } from "./base64";
 
@@ -26,8 +26,8 @@ export default class JamComponent extends Component {
             autoCreate: "true",
           },
           identity: {
-            name: this.props.identity?.displayName,
-            avatar: this.props.identity?.avatar?.uri,
+            name: this.props.identity?.displayName || undefined,
+            avatar: this.props.identity?.avatar?.uri || undefined,
           },
           debug: true,
         })
@@ -47,7 +47,14 @@ export default class JamComponent extends Component {
         onMessage={(event) => {
           console.log(...JSON.parse(event.nativeEvent.data));
         }}
+        userAgent={userAgent}
+        domStorageEnabled={true}
       ></WebView>
     );
   }
 }
+
+const userAgent = Platform.select({
+  ios: "JamWebView/ios",
+  android: "JamWebView/android",
+});
