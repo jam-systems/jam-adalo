@@ -39,7 +39,7 @@ class JamComponent extends Component {
         <iframe
           src={uri}
           width="100%"
-          allow="microphone *;"
+          allow="microphone *; screen-wake-lock *;"
           style={{ border: 0, height: 600 }}
         ></iframe>
       </View>
